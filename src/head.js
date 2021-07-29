@@ -1,6 +1,6 @@
 const head = (inputArray)=>{
-
-    if(inputArray.length === 0)
+    const sizeOfEmptyArray = 0;
+    if(inputArray.length === sizeOfEmptyArray)
       return null;
     
     return inputArray[0];

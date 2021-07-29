@@ -10,7 +10,7 @@ describe('Head of array',()=>{
 
     });
 
-    it('Should first element of array if the empty array is not empty',()=>{
+    it('Should return first element of array if the empty array is not empty',()=>{
 
         const numbers = [1,2,3];
         const expectedNumber = 1;
