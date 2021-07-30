@@ -1,4 +1,4 @@
-const filter= require('./filter');
+const filter= require('../utility/filter');
 
 describe('Filter', () => {
 

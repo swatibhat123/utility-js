@@ -1,5 +1,5 @@
 
-const reduce = require('./reduce')
+const reduce = require('../utility/reduce')
 
 describe('Reduce function',() => {
 

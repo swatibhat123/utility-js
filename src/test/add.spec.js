@@ -1,4 +1,4 @@
-const add = require('./add');
+const add = require('../utility/add');
 
 describe('Add', () => {
 

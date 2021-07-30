@@ -1,4 +1,4 @@
-const head = require('./head');
+const head = require('../utility/head');
 
 describe('Head of array',()=>{
 
