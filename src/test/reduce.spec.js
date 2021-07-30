@@ -5,10 +5,13 @@ describe('Reduce function',() => {
 
     it('Should return undefined if initial value is not defined and input array is empty',()=>{
 
-        const input=[];
+        const numbers=[];
         const sum = (x,y)=> x+y;
-        const expectedOutput = undefined;
-        expect(reduce(input,sum)).toEqual(expectedOutput);
+
+        const sumOfNumbers = reduce(numbers,sum);
+
+        const expectedSum = undefined;
+        expect(sumOfNumbers).toEqual(expectedSum);
 
     });
 
@@ -17,34 +20,48 @@ describe('Reduce function',() => {
         const input=[];
         const sum = (x,y)=> x+y;
         const initialValue = 10;
-        const expectedOutput = 10;
-        expect(reduce(input,sum,initialValue)).toEqual(expectedOutput);
+
+        const sumOfNumbers = reduce(input,sum,initialValue);
+
+        const expectedSum = 10;
+        expect(sumOfNumbers).toEqual(expectedSum);
 
     });
 
     it('Should return sum if initial value is not defined and number array is passed as parameter',()=>{
 
-        const number=[1,2,3];
+        const numbers=[1,2,3];
         const sum = (x,y)=> x+y;
+
+        const sumOfNumbers = reduce(numbers,sum);
+
         const expectedSum = 6;
-        expect(reduce(number,sum)).toEqual(expectedSum);
+        expect(sumOfNumbers).toEqual(expectedSum);
 
     });
 
     it('Should return abc if initial value is not defined and array containing letters(abc) is passes as parameter',()=>{
+
         const letters = ['a','b','c'];
         const concatenation = (x,y)=>x+y;
+
+        const concatinatedletters = reduce(letters,concatenation);
+
         const expectedLetters = 'abc';
-        expect(reduce(letters,concatenation)).toEqual(expectedLetters);
+        expect(concatinatedletters).toEqual(expectedLetters);
 
     });
 
     it('Should return zabc if initial value is z and array containing letters(abc) is passes as parameter',()=>{
+        
         const letters = ['a','b','c'];
         const concatenation = (x,y)=>x+y;
         const initialValue = 'z';
+
+        const concatinatedletters = reduce(letters,concatenation,initialValue);
+        
         const expectedLetters = 'zabc';
-        expect(reduce(letters,concatenation,initialValue)).toEqual(expectedLetters);
+        expect(concatinatedletters).toEqual(expectedLetters);
 
     })
 

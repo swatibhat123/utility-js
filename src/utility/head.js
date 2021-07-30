@@ -1,4 +1,5 @@
 const head = (inputArray)=>{
+  
     const sizeOfEmptyArray = 0;
     if(inputArray.length === sizeOfEmptyArray)
       return null;

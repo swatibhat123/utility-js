@@ -3,6 +3,7 @@ const filter = (inputArray,callbackFn) => {
 
     const filteredArray = [];
     let index =0;
+    
     return applyFilter(inputArray,callbackFn,index,filteredArray);
 
 }

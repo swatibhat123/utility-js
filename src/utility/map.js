@@ -3,6 +3,7 @@ const map = (inputArray,callbackFn) => {
 
     const mappedArray = [];
     let index =0;
+    
     return getMappedElements(inputArray,callbackFn,index,mappedArray);
 
 }
